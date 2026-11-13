@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px;
+    background-color: #fff5f5;
+}
+
+.navbar {
+    background-color: #d9534f !important;
+}
+
+.header-section {
+    background-color: #ffffff;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 4px solid #ffcccc;
+}
+
+.portfolio-section {
+    background-color: #ff8080;
+}
+
+.project-card {
+    border-radius: 15px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff9f9;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(217, 83, 79, 0.2) !important;
+}
+
+.btn-outline-danger {
+    border-color: #d9534f;
+    color: #d9534f;
+}
+
+.btn-outline-danger:hover {
+    background-color: #d9534f;
+    color: white;
+}
+
+.about-section {
+    background-color: #ffffff;
+}
+
+.custom-hr {
+    border-top: 2px solid #ff9999;
+    opacity: 1;
+}
+
+.contact-section {
+    background-color: #e65c5c; 
+}
+
+.footer-main {
+    background-color: #b33636;
+}
+
+.footer-bottom {
+    background-color: #992e2e;
+}
+
+.social-icons .btn {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
