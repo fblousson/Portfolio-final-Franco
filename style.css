@@ -1,74 +1,347 @@
+:root {
+    --red-primary: #e85d68;
+    --red-dark: #c9424d;
+    --red-pastel: #ff8a93;
+    --red-soft: #ffe8ea;
+    --red-bg: #fff8f8;
+    --text-dark: #2b2123;
+    --text-muted: #6c5b5e;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 56px;
-    background-color: #fff5f5;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--red-bg);
+    color: var(--text-dark);
+    padding-top: 72px;
 }
 
-.navbar {
-    background-color: #d9534f !important;
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-family: 'Outfit', sans-serif;
 }
 
-.header-section {
-    background-color: #ffffff;
+.custom-navbar {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(232, 93, 104, 0.15);
+    padding: 0.85rem 0;
+}
+
+.navbar-brand {
+    color: var(--text-dark) !important;
+    font-size: 1.3rem;
+    letter-spacing: -0.5px;
+}
+
+.brand-dot {
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(135deg, var(--red-primary), var(--red-pastel));
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.25s ease;
+}
+
+.nav-link:hover {
+    color: var(--red-primary) !important;
+}
+
+.btn-nav-contact {
+    background-color: var(--red-soft);
+    color: var(--red-primary) !important;
+    padding: 0.45rem 1.1rem !important;
+    border-radius: 50px;
+}
+
+.btn-nav-contact:hover {
+    background-color: var(--red-primary);
+    color: #ffffff !important;
+}
+
+.hero-section {
+    background: radial-gradient(circle at top right, #ffd9dc 0%, #fff8f8 45%, #ffffff 100%);
+    min-height: 75vh;
+    border-bottom: 1px solid rgba(232, 93, 104, 0.12);
+}
+
+.avatar-wrapper {
+    width: 175px;
+    height: 175px;
+    padding: 6px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--red-primary), #ffb3b9);
+    box-shadow: 0 15px 35px rgba(232, 93, 104, 0.25);
 }
 
 .profile-img {
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border: 4px solid #ffcccc;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+}
+
+.badge-role {
+    background-color: var(--red-soft);
+    color: var(--red-dark);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.45rem 1rem;
+    border-radius: 50px;
+    border: 1px solid rgba(232, 93, 104, 0.25);
+}
+
+.hero-title {
+    font-size: clamp(2.3rem, 5vw, 3.6rem);
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--red-primary), #ff7b85);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    max-width: 620px;
+    color: var(--text-muted);
+    font-size: 1.12rem;
+    line-height: 1.7;
+}
+
+.btn-coral {
+    background: linear-gradient(135deg, var(--red-primary), #f2747e);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(232, 93, 104, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-coral:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(232, 93, 104, 0.4);
+    color: #ffffff;
+}
+
+.btn-soft-coral {
+    background-color: #ffffff;
+    color: var(--red-primary);
+    border: 1.5px solid rgba(232, 93, 104, 0.35);
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-soft-coral:hover {
+    background-color: var(--red-soft);
+    border-color: var(--red-primary);
+    color: var(--red-dark);
+}
+
+.section-tag {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--red-primary);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+}
+
+.title-line {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--red-primary), var(--red-pastel));
+    border-radius: 4px;
+    margin-top: 0.75rem;
 }
 
 .portfolio-section {
-    background-color: #ff8080;
+    background-color: #fff2f3;
 }
 
 .project-card {
-    border-radius: 15px !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff9f9;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 1.75rem;
+    border: 1px solid rgba(232, 93, 104, 0.14);
+    box-shadow: 0 10px 30px rgba(43, 33, 35, 0.04);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.32s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(217, 83, 79, 0.2) !important;
+    transform: translateY(-8px);
+    border-color: var(--red-pastel);
+    box-shadow: 0 20px 40px rgba(232, 93, 104, 0.16);
 }
 
-.btn-outline-danger {
-    border-color: #d9534f;
-    color: #d9534f;
+.icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background-color: var(--red-soft);
+    color: var(--red-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
 }
 
-.btn-outline-danger:hover {
-    background-color: #d9534f;
-    color: white;
+.project-card:hover .icon-box {
+    background: linear-gradient(135deg, var(--red-primary), var(--red-pastel));
+    color: #ffffff;
+}
+
+.unit-badge {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--red-dark);
+    background-color: var(--red-soft);
+    padding: 0.3rem 0.75rem;
+    border-radius: 50px;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.project-desc {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin-bottom: 1.5rem;
+}
+
+.btn-project {
+    background-color: var(--red-bg);
+    color: var(--red-dark);
+    border: 1px solid rgba(232, 93, 104, 0.25);
+    border-radius: 12px;
+    padding: 0.65rem 1rem;
+    font-weight: 600;
+    font-size: 0.92rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.25s ease;
+}
+
+.btn-project:hover {
+    background: linear-gradient(135deg, var(--red-primary), #f2747e);
+    color: #ffffff;
+    border-color: transparent;
 }
 
 .about-section {
     background-color: #ffffff;
 }
 
-.custom-hr {
-    border-top: 2px solid #ff9999;
-    opacity: 1;
+.about-box {
+    max-width: 780px;
+    background: var(--red-bg);
+    padding: 3rem 2rem;
+    border-radius: 24px;
+    border: 1px solid rgba(232, 93, 104, 0.15);
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+}
+
+.skill-pill {
+    background-color: #ffffff;
+    color: var(--red-dark);
+    border: 1px solid rgba(232, 93, 104, 0.25);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
 }
 
 .contact-section {
-    background-color: #e65c5c; 
+    background: linear-gradient(180deg, #fff2f3 0%, #ffe4e6 100%);
+}
+
+.contact-card {
+    max-width: 680px;
+    background: #ffffff;
+    padding: 2.75rem;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(232, 93, 104, 0.12);
+    border: 1px solid rgba(232, 93, 104, 0.15);
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+.custom-input {
+    border-radius: 12px;
+    border: 1.5px solid #f0d8da;
+    padding: 0.75rem 1rem;
+    background-color: #fffafb;
+    transition: all 0.25s ease;
+}
+
+.custom-input:focus {
+    border-color: var(--red-primary);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(232, 93, 104, 0.15);
 }
 
 .footer-main {
-    background-color: #b33636;
+    background-color: #b83b46;
+    color: #ffffff;
 }
 
-.footer-bottom {
-    background-color: #992e2e;
-}
-
-.social-icons .btn {
-    width: 38px;
-    height: 38px;
+.social-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.social-btn:hover {
+    background-color: #ffffff;
+    color: var(--red-dark);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    background-color: #9e2f39;
+    color: rgba(255, 255, 255, 0.75);
 }

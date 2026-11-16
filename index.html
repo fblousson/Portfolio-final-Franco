@@ -3,162 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio</title>
+    <title>Franco Blousson | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Franco Blousson </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+                <span class="brand-dot"></span> Franco Blousson
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav gap-lg-3">
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#acerca-de-mi">ACERCA DE MÍ</a>
+                        <a class="nav-link" href="#acerca-de-mi">Acerca de mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                        <a class="nav-link btn-nav-contact" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="header-section text-center py-5">
+    <header class="hero-section d-flex align-items-center text-center">
         <div class="container py-5">
-            <img src="https://mail.google.com/mail/u/1/?ui=2&ik=fc1a2fb6be&attid=0.1&permmsgid=msg-a:r-4111973458328630348&th=1a1d70ee0f086899&view=fimg&fur=ip&permmsgid=msg-a:r-4111973458328630348&sz=s0-l75-ft&attbid=ANGjdJ-C-69ct8sGLkO3JpVExREbcyh2lQ3QCsL-Z6ttSPmu6c3iTUM-c1udsGjb2kS_vWo1IxJZHuxcbZVeIjNhwJhRj5vwUHMP1DpZHTNZP4i9x7xZus--vaaJU7M&disp=emb&realattid=ii_1a1d70ebf69498e6a0e1&zw" alt="Avatar" class="rounded-circle profile-img mb-4 shadow-sm">
-            <h1 class="display-4 fw-bold text-dark">Franco Blousson</h1>
-            <p class="text-muted fs-5">Estudiante St. Brendans College</p>
+            <div class="avatar-wrapper mx-auto mb-4">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80" alt="Franco Blousson" class="profile-img">
+            </div>
+            <span class="badge-role mb-3 d-inline-block">Estudiante St. Brendans College</span>
+            <h1 class="hero-title mb-3">Hola, soy <span class="text-gradient">Franco Blousson</span></h1>
+            <p class="hero-subtitle mx-auto mb-4">
+                Futuro Ingeniero Industrial apasionado por el desarrollo web, las ciencias exactas y la resolución de problemas con código.
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#portfolio" class="btn btn-coral btn-lg px-4">Ver mis proyectos <i class="fa-solid fa-arrow-down ms-2"></i></a>
+                <a href="#contacto" class="btn btn-soft-coral btn-lg px-4">Contactarme</a>
+            </div>
         </div>
     </header>
 
     <section id="portfolio" class="portfolio-section py-5">
         <div class="container py-4">
-            <h2 class="text-center mb-5 fw-bold text-white">PORTFOLIO DE GITHUB</h2>
+            <div class="text-center mb-5">
+                <span class="section-tag">Mis Trabajos</span>
+                <h2 class="section-title mt-2">Portfolio de GitHub</h2>
+                <div class="title-line mx-auto"></div>
+            </div>
+
             <div class="row g-4">
 
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm project-card">
-                        <div class="card-body d-flex flex-column justify-content-between p-4">
-                            <div>
-                                <div class="mb-3 text-danger"><i class="fa-brands fa-github fa-2x"></i></div>
-                                <h5 class="card-title fw-bold">Proyecto unidad 3</h5>
-                                <p class="card-text text-muted small">Manzaneria "Claudio"</p>
-                            </div>
-                            <a href="https://fblousson.github.io/Franco-terminado-por-milesima-vez/" target="_blank" class="btn btn-outline-danger mt-3 w-100">Ver en GitHub</a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="card-top d-flex justify-content-between align-items-center mb-3">
+                            <div class="icon-box"><i class="fa-solid fa-store"></i></div>
+                            <span class="unit-badge">Unidad 3</span>
                         </div>
-                    </div>
-               </div>
-
-               <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm project-card">
-                        <div class="card-body d-flex flex-column justify-content-between p-4">
-                            <div>
-                                <div class="mb-3 text-danger"><i class="fa-brands fa-github fa-2x"></i></div>
-                                <h5 class="card-title fw-bold">Proyecto unidad 4</h5>
-                                <p class="card-text text-muted small">Formulario tripulantes</p>
-                            </div>
-                            <a href="https://fblousson.github.io/unidad4-terminado-franco/" target="_blank" class="btn btn-outline-danger mt-3 w-100">Ver en GitHub</a>
-                        </div>
+                        <h5 class="project-title">Manzanería "Claudio"</h5>
+                        <p class="project-desc">Sitio web comercial desarrollado como proyecto de maquetación y estructura web.</p>
+                        <a href="https://fblousson.github.io/Franco-terminado-por-milesima-vez/" target="_blank" class="btn btn-project w-100 mt-auto">
+                            <span>Ver proyecto</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
 
-               <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm project-card">
-                        <div class="card-body d-flex flex-column justify-content-between p-4">
-                            <div>
-                                <div class="mb-3 text-danger"><i class="fa-brands fa-github fa-2x"></i></div>
-                                <h5 class="card-title fw-bold">Proyecto unidad 5</h5>
-                                <p class="card-text text-muted small">Venta iphone</p>
-                            </div>
-                            <a href="https://fblousson.github.io/unidad-5/" target="_blank" class="btn btn-outline-danger mt-3 w-100">Ver en GitHub</a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="card-top d-flex justify-content-between align-items-center mb-3">
+                            <div class="icon-box"><i class="fa-solid fa-clipboard-list"></i></div>
+                            <span class="unit-badge">Unidad 4</span>
                         </div>
+                        <h5 class="project-title">Formulario tripulantes</h5>
+                        <p class="project-desc">Diseño y validación de formularios interactivos para registro de tripulación.</p>
+                        <a href="https://fblousson.github.io/unidad4-terminado-franco/" target="_blank" class="btn btn-project w-100 mt-auto">
+                            <span>Ver proyecto</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm project-card">
-                        <div class="card-body d-flex flex-column justify-content-between p-4">
-                            <div>
-                                <div class="mb-3 text-danger"><i class="fa-brands fa-github fa-2x"></i></div>
-                                <h5 class="card-title fw-bold">Proyecto unidad 7</h5>
-                                <p class="card-text text-muted small">Calculadora de snacks</p>
-                            </div>
-                            <a href="https://fblousson.github.io/callculadora-de-snacks/" target="_blank" class="btn btn-outline-danger mt-3 w-100">Ver en GitHub</a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="card-top d-flex justify-content-between align-items-center mb-3">
+                            <div class="icon-box"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <span class="unit-badge">Unidad 5</span>
                         </div>
+                        <h5 class="project-title">Venta iPhone</h5>
+                        <p class="project-desc">Landing page de catálogo y exhibición de productos tecnológicos.</p>
+                        <a href="https://fblousson.github.io/unidad-5/" target="_blank" class="btn btn-project w-100 mt-auto">
+                            <span>Ver proyecto</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm project-card">
-                        <div class="card-body d-flex flex-column justify-content-between p-4">
-                            <div>
-                                <div class="mb-3 text-danger"><i class="fa-brands fa-github fa-2x"></i></div>
-                                <h5 class="card-title fw-bold">Proyecto unidad 7</h5>
-                                <p class="card-text text-muted small">Presupuesto de viaje</p>
-                            </div>
-                            <a href="https://fblousson.github.io/presupuesto-de-viaje/" target="_blank" class="btn btn-outline-danger mt-3 w-100">Ver en GitHub</a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="card-top d-flex justify-content-between align-items-center mb-3">
+                            <div class="icon-box"><i class="fa-solid fa-cookie-bite"></i></div>
+                            <span class="unit-badge">Unidad 7</span>
                         </div>
+                        <h5 class="project-title">Calculadora de snacks</h5>
+                        <p class="project-desc">Aplicación en JavaScript para calcular consumo y presupuesto de snacks a futuro.</p>
+                        <a href="https://fblousson.github.io/callculadora-de-snacks/" target="_blank" class="btn btn-project w-100 mt-auto">
+                            <span>Ver proyecto</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm project-card">
-                        <div class="card-body d-flex flex-column justify-content-between p-4">
-                            <div>
-                                <div class="mb-3 text-danger"><i class="fa-brands fa-github fa-2x"></i></div>
-                                <h5 class="card-title fw-bold">Proyecto unidad 8</h5>
-                                <p class="card-text text-muted small">Puedo jubilarme?</p>
-                            </div>
-                            <a href="https://fblousson.github.io/puedo-jubilarme-franco/" target="_blank" class="btn btn-outline-danger mt-3 w-100">Ver en GitHub</a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="card-top d-flex justify-content-between align-items-center mb-3">
+                            <div class="icon-box"><i class="fa-solid fa-plane-departure"></i></div>
+                            <span class="unit-badge">Unidad 7</span>
                         </div>
+                        <h5 class="project-title">Presupuesto de viaje</h5>
+                        <p class="project-desc">Herramienta práctica para dividir gastos y administrar comidas en vacaciones.</p>
+                        <a href="https://fblousson.github.io/presupuesto-de-viaje/" target="_blank" class="btn btn-project w-100 mt-auto">
+                            <span>Ver proyecto</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm project-card">
-                        <div class="card-body d-flex flex-column justify-content-between p-4">
-                            <div>
-                                <div class="mb-3 text-danger"><i class="fa-brands fa-github fa-2x"></i></div>
-                                <h5 class="card-title fw-bold">Proyecto unidad 9</h5>
-                                <p class="card-text text-muted small">Juego piedra papel o tijera</p>
-                            </div>
-                            <a href="https://fblousson.github.io/piedrapapelotijera-/" target="_blank" class="btn btn-outline-danger mt-3 w-100">Ver en GitHub</a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="card-top d-flex justify-content-between align-items-center mb-3">
+                            <div class="icon-box"><i class="fa-solid fa-user-check"></i></div>
+                            <span class="unit-badge">Unidad 8</span>
                         </div>
+                        <h5 class="project-title">¿Puedo jubilarme?</h5>
+                        <p class="project-desc">Programa con lógica condicional para verificar requisitos de edad jubilatoria.</p>
+                        <a href="https://fblousson.github.io/puedo-jubilarme-franco/" target="_blank" class="btn btn-project w-100 mt-auto">
+                            <span>Ver proyecto</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm project-card">
-                        <div class="card-body d-flex flex-column justify-content-between p-4">
-                            <div>
-                                <div class="mb-3 text-danger"><i class="fa-brands fa-github fa-2x"></i></div>
-                                <h5 class="card-title fw-bold">Proyecto unidad 11</h5>
-                                <p class="card-text text-muted small">Lista de supermercado</p>
-                            </div>
-                            <a href="https://fblousson.github.io/Lista-de-super-parte-3/" target="_blank" class="btn btn-outline-danger mt-3 w-100">Ver en GitHub</a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="card-top d-flex justify-content-between align-items-center mb-3">
+                            <div class="icon-box"><i class="fa-solid fa-hand-scissors"></i></div>
+                            <span class="unit-badge">Unidad 9</span>
                         </div>
+                        <h5 class="project-title">Piedra, papel o tijera</h5>
+                        <p class="project-desc">Juego clásico interactivo contra la computadora desarrollado con JavaScript.</p>
+                        <a href="https://fblousson.github.io/piedrapapelotijera-/" target="_blank" class="btn btn-project w-100 mt-auto">
+                            <span>Ver proyecto</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm project-card">
-                        <div class="card-body d-flex flex-column justify-content-between p-4">
-                            <div>
-                                <div class="mb-3 text-danger"><i class="fa-brands fa-github fa-2x"></i></div>
-                                <h5 class="card-title fw-bold">Proyecto unidad 14</h5>
-                                <p class="card-text text-muted small">Color guessing game</p>
-                            </div>
-                            <a href="https://fblousson.github.io/colorguessingameFranco/" target="_blank" class="btn btn-outline-danger mt-3 w-100">Ver en GitHub</a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="card-top d-flex justify-content-between align-items-center mb-3">
+                            <div class="icon-box"><i class="fa-solid fa-cart-shopping"></i></div>
+                            <span class="unit-badge">Unidad 11</span>
                         </div>
+                        <h5 class="project-title">Lista de supermercado</h5>
+                        <p class="project-desc">Gestor dinámico de compras utilizando arreglos, funciones y ciclos en JS.</p>
+                        <a href="https://fblousson.github.io/Lista-de-super-parte-3/" target="_blank" class="btn btn-project w-100 mt-auto">
+                            <span>Ver proyecto</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="card-top d-flex justify-content-between align-items-center mb-3">
+                            <div class="icon-box"><i class="fa-solid fa-palette"></i></div>
+                            <span class="unit-badge">Unidad 14</span>
+                        </div>
+                        <h5 class="project-title">Color guessing game</h5>
+                        <p class="project-desc">Juego de adivinanza de códigos RGB con manipulación avanzada del DOM.</p>
+                        <a href="https://fblousson.github.io/colorguessingameFranco/" target="_blank" class="btn btn-project w-100 mt-auto">
+                            <span>Ver proyecto</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -166,57 +203,82 @@
         </div>
     </section>
 
-    <section id="acerca-de-mi" class="about-section py-5 bg-white text-dark text-center">
+    <section id="acerca-de-mi" class="about-section py-5">
         <div class="container py-4">
-            <h2 class="fw-bold mb-3">ACERCA DE MI</h2>
-            <hr class="w-25 mx-auto mb-4 custom-hr">
-            <p class="lead text-muted mx-auto" style="max-width: 700px;">
-                Soy un estudiante proximo a recibirme del secundario y futuro ingeniero industrial, apasionado por las ciencias exactas y aprender cosas nuevas
-            </p>
+            <div class="about-box mx-auto text-center">
+                <span class="section-tag">Perfil</span>
+                <h2 class="section-title mt-2 mb-3">Acerca de mí</h2>
+                <div class="title-line mx-auto mb-4"></div>
+                <p class="about-text mb-4">
+                    Soy un estudiante próximo a recibirme del secundario y futuro ingeniero industrial, apasionado por las ciencias exactas y aprender cosas nuevas. Me gusta combinar el pensamiento lógico con el desarrollo web para crear proyectos funcionales y bien diseñados.
+                </p>
+                <div class="d-flex justify-content-center gap-2 flex-wrap">
+                    <span class="skill-pill">HTML5</span>
+                    <span class="skill-pill">CSS3 & Bootstrap</span>
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">Git & GitHub</span>
+                    <span class="skill-pill">Ciencias Exactas</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contacto" class="contact-section py-5 text-white">
-        <div class="container py-4" style="max-width: 800px;">
-            <h2 class="text-center mb-5 fw-bold">CONTACTAME</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" required>
+    <section id="contacto" class="contact-section py-5">
+        <div class="container py-4">
+            <div class="contact-card mx-auto">
+                <div class="text-center mb-4">
+                    <span class="section-tag">Hablemos</span>
+                    <h2 class="section-title mt-2">Contactame</h2>
+                    <div class="title-line mx-auto"></div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Mail</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="telefono" class="form-label">Telefono</label>
-                    <input type="tel" class="form-control" id="telefono">
-                </div>
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-light px-4 text-danger fw-semibold">Enviar</button>
-            </form>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control custom-input" id="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Mail</label>
+                            <input type="email" class="form-control custom-input" id="email" placeholder="nombre@ejemplo.com" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control custom-input" id="telefono" placeholder="Tu número de teléfono">
+                        </div>
+                        <div class="col-12">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control custom-input" id="mensaje" rows="4" placeholder="Escribí tu mensaje acá..." required></textarea>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-coral w-100 py-3 fw-bold">
+                                Enviar mensaje <i class="fa-solid fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
-    <footer class="footer-main text-white pt-5 pb-3">
-        <div class="container">
-            <div class="row text-center text-md-start mb-4">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h5 class="fw-bold mb-3">Direccion</h5>
-                    <p class="mb-1">Buenos Aires, Argentina</p>
+    <footer class="footer-main">
+        <div class="container py-5">
+            <div class="row align-items-center text-center text-md-start gy-4">
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-2">Franco Blousson</h5>
+                    <p class="mb-0 opacity-75"><i class="fa-solid fa-location-dot me-2"></i>Buenos Aires, Argentina</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <h5 class="fw-bold mb-3">REDES</h5>
+                    <p class="small text-uppercase fw-bold mb-2 opacity-75">Redes</p>
                     <div class="social-icons d-flex justify-content-center justify-content-md-end gap-2">
-                        <a href="https://github.com" target="_blank" class="btn btn-outline-light rounded-1"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://linkedin.com" target="_blank" class="btn btn-outline-light rounded-1"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://instagram.com" target="_blank" class="btn btn-outline-light rounded-1"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/fblousson" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="footer-bottom text-center py-3">
+            <p class="mb-0 small">Copyright &copy; Franco Blousson 2026</p>
         </div>
     </footer>
 
